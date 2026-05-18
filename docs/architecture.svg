@@ -1,0 +1,142 @@
+<svg viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f0f"/>
+      <stop offset="100%" style="stop-color:#1a1208"/>
+    </linearGradient>
+    <linearGradient id="iris-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#0d2240"/>
+    </linearGradient>
+    <linearGradient id="saffi-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5c3a00"/>
+      <stop offset="100%" style="stop-color:#3d2600"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8a020"/>
+      <stop offset="100%" style="stop-color:#f5c842"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#e8a020" opacity="0.8"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4a9eff" opacity="0.8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="520" fill="url(#bg)" rx="12"/>
+  <rect width="900" height="520" fill="none" stroke="#2a2a2a" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="13" font-weight="600" fill="#e8a020" letter-spacing="3">SERFIS — SYSTEM ARCHITECTURE</text>
+  <line x1="60" y1="52" x2="840" y2="52" stroke="#2a2a2a" stroke-width="1"/>
+
+  <!-- ── IRIS SECTION ── -->
+  <rect x="40" y="68" width="820" height="170" rx="10" fill="url(#iris-grad)" stroke="#1e5fa0" stroke-width="1" opacity="0.8"/>
+  <text x="60" y="92" font-size="11" font-weight="700" fill="#4a9eff" letter-spacing="2">IRIS  ·  AI PROSPECTOR</text>
+  <text x="60" y="108" font-size="10" fill="#6a9ec0">iris.serfis.ai</text>
+
+  <!-- Data source boxes -->
+  <rect x="60" y="118" width="110" height="48" rx="6" fill="#0a1a2e" stroke="#1e4a7a" stroke-width="1"/>
+  <text x="115" y="137" text-anchor="middle" font-size="10" fill="#7ab8e8">Data Sources</text>
+  <text x="115" y="152" text-anchor="middle" font-size="9" fill="#4a7a9a">LinkedIn · Apollo</text>
+  <text x="115" y="163" text-anchor="middle" font-size="9" fill="#4a7a9a">Clearbit · Web</text>
+
+  <rect x="210" y="118" width="110" height="48" rx="6" fill="#0a1a2e" stroke="#1e4a7a" stroke-width="1"/>
+  <text x="265" y="137" text-anchor="middle" font-size="10" fill="#7ab8e8">AI Scoring</text>
+  <text x="265" y="152" text-anchor="middle" font-size="9" fill="#4a7a9a">ICP matching</text>
+  <text x="265" y="163" text-anchor="middle" font-size="9" fill="#4a7a9a">Lead ranking</text>
+
+  <rect x="360" y="118" width="110" height="48" rx="6" fill="#0a1a2e" stroke="#1e4a7a" stroke-width="1"/>
+  <text x="415" y="137" text-anchor="middle" font-size="10" fill="#7ab8e8">List Manager</text>
+  <text x="415" y="152" text-anchor="middle" font-size="9" fill="#4a7a9a">Segment · filter</text>
+  <text x="415" y="163" text-anchor="middle" font-size="9" fill="#4a7a9a">Dedup · enrich</text>
+
+  <rect x="510" y="118" width="110" height="48" rx="6" fill="#0a1a2e" stroke="#1e4a7a" stroke-width="1"/>
+  <text x="565" y="137" text-anchor="middle" font-size="10" fill="#7ab8e8">Auth &amp; Billing</text>
+  <text x="565" y="152" text-anchor="middle" font-size="9" fill="#4a7a9a">Clerk · Stripe</text>
+  <text x="565" y="163" text-anchor="middle" font-size="9" fill="#4a7a9a">Plans · credits</text>
+
+  <rect x="660" y="118" width="115" height="48" rx="6" fill="#0a1a2e" stroke="#1e4a7a" stroke-width="1"/>
+  <text x="718" y="137" text-anchor="middle" font-size="10" fill="#7ab8e8">PostgreSQL DB</text>
+  <text x="718" y="152" text-anchor="middle" font-size="9" fill="#4a7a9a">Neon · clients</text>
+  <text x="718" y="163" text-anchor="middle" font-size="9" fill="#4a7a9a">leads · lists</text>
+
+  <!-- Iris internal arrows -->
+  <line x1="170" y1="142" x2="208" y2="142" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arrow-blue)" opacity="0.7"/>
+  <line x1="320" y1="142" x2="358" y2="142" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arrow-blue)" opacity="0.7"/>
+  <line x1="470" y1="142" x2="508" y2="142" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arrow-blue)" opacity="0.7"/>
+  <line x1="620" y1="142" x2="658" y2="142" stroke="#4a9eff" stroke-width="1.5" marker-end="url(#arrow-blue)" opacity="0.7"/>
+
+  <!-- Iris user label -->
+  <rect x="60" y="195" width="290" height="28" rx="5" fill="#0d2035" stroke="#1e4a7a" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="205" y="213" text-anchor="middle" font-size="9.5" fill="#4a7a9a">Next.js web app  ·  Hono REST API  ·  Railway + Vercel</text>
+
+  <!-- ── HANDOFF ARROW ── -->
+  <text x="450" y="263" text-anchor="middle" font-size="10" fill="#e8a020" font-weight="600" filter="url(#glow)">Verified prospects pushed to Saffi via shared identity</text>
+  <line x1="450" y1="240" x2="450" y2="270" stroke="url(#gold)" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+  <circle cx="450" cy="258" r="14" fill="#1a0f00" stroke="#e8a020" stroke-width="1.5"/>
+  <text x="450" y="262" text-anchor="middle" font-size="12" fill="#e8a020">⇣</text>
+
+  <!-- ── SAFFI SECTION ── -->
+  <rect x="40" y="278" width="820" height="170" rx="10" fill="url(#saffi-grad)" stroke="#8a5a00" stroke-width="1" opacity="0.85"/>
+  <text x="60" y="302" font-size="11" font-weight="700" fill="#f5c842" letter-spacing="2">SAFFI  ·  AI SALES DEVELOPMENT REPRESENTATIVE</text>
+  <text x="60" y="318" font-size="10" fill="#9a7a30">serfis.ai  ·  Sold as headcount — one flat price per agent</text>
+
+  <!-- Saffi pipeline boxes -->
+  <rect x="60" y="328" width="100" height="48" rx="6" fill="#2a1500" stroke="#7a4a00" stroke-width="1"/>
+  <text x="110" y="347" text-anchor="middle" font-size="10" fill="#f5c842">Sequence</text>
+  <text x="110" y="360" text-anchor="middle" font-size="9" fill="#a07030">Engine</text>
+  <text x="110" y="371" text-anchor="middle" font-size="9" fill="#a07030">multi-step</text>
+
+  <rect x="195" y="328" width="100" height="48" rx="6" fill="#2a1500" stroke="#7a4a00" stroke-width="1"/>
+  <text x="245" y="347" text-anchor="middle" font-size="10" fill="#f5c842">Email AI</text>
+  <text x="245" y="360" text-anchor="middle" font-size="9" fill="#a07030">Personalized</text>
+  <text x="245" y="371" text-anchor="middle" font-size="9" fill="#a07030">copy · voice</text>
+
+  <rect x="330" y="328" width="100" height="48" rx="6" fill="#2a1500" stroke="#7a4a00" stroke-width="1"/>
+  <text x="380" y="347" text-anchor="middle" font-size="10" fill="#f5c842">Reply AI</text>
+  <text x="380" y="360" text-anchor="middle" font-size="9" fill="#a07030">Classify intent</text>
+  <text x="380" y="371" text-anchor="middle" font-size="9" fill="#a07030">auto-respond</text>
+
+  <rect x="465" y="328" width="100" height="48" rx="6" fill="#2a1500" stroke="#7a4a00" stroke-width="1"/>
+  <text x="515" y="347" text-anchor="middle" font-size="10" fill="#f5c842">CRM Sync</text>
+  <text x="515" y="360" text-anchor="middle" font-size="9" fill="#a07030">HubSpot</text>
+  <text x="515" y="371" text-anchor="middle" font-size="9" fill="#a07030">Salesforce</text>
+
+  <rect x="600" y="328" width="100" height="48" rx="6" fill="#2a1500" stroke="#7a4a00" stroke-width="1"/>
+  <text x="650" y="347" text-anchor="middle" font-size="10" fill="#f5c842">Booking</text>
+  <text x="650" y="360" text-anchor="middle" font-size="9" fill="#a07030">Calendar link</text>
+  <text x="650" y="371" text-anchor="middle" font-size="9" fill="#a07030">auto-schedule</text>
+
+  <rect x="735" y="328" width="100" height="48" rx="6" fill="#2a1500" stroke="#7a4a00" stroke-width="1"/>
+  <text x="785" y="347" text-anchor="middle" font-size="10" fill="#f5c842">Auth + Billing</text>
+  <text x="785" y="360" text-anchor="middle" font-size="9" fill="#a07030">Clerk · Stripe</text>
+  <text x="785" y="371" text-anchor="middle" font-size="9" fill="#a07030">instances</text>
+
+  <!-- Saffi internal arrows -->
+  <line x1="160" y1="352" x2="193" y2="352" stroke="#e8a020" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+  <line x1="295" y1="352" x2="328" y2="352" stroke="#e8a020" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+  <line x1="430" y1="352" x2="463" y2="352" stroke="#e8a020" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+  <line x1="565" y1="352" x2="598" y2="352" stroke="#e8a020" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+  <line x1="700" y1="352" x2="733" y2="352" stroke="#e8a020" stroke-width="1.5" marker-end="url(#arrow)" opacity="0.7"/>
+
+  <!-- Saffi infra label -->
+  <rect x="60" y="406" width="290" height="28" rx="5" fill="#1a0c00" stroke="#7a4a00" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="205" y="424" text-anchor="middle" font-size="9.5" fill="#9a6030">Next.js web app  ·  Node.js API  ·  PostgreSQL (Neon)  ·  Anthropic Claude AI</text>
+
+  <!-- Outcome badge -->
+  <rect x="480" y="406" width="220" height="28" rx="14" fill="#1a0c00" stroke="#e8a020" stroke-width="1.5"/>
+  <circle cx="498" cy="420" r="5" fill="#e8a020" filter="url(#glow)"/>
+  <text x="560" y="424" text-anchor="middle" font-size="10" fill="#f5c842" font-weight="600">Meeting booked. Pipeline full.</text>
+
+  <!-- Footer -->
+  <line x1="60" y1="468" x2="840" y2="468" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="450" y="488" text-anchor="middle" font-size="10" fill="#3a3a3a">Built by Pranav Akshat · serfis.ai · Full-stack TypeScript · Cloud-native infrastructure</text>
+  <text x="450" y="505" text-anchor="middle" font-size="9" fill="#2a2a2a">Private repositories · Production deployments live</text>
+</svg>
