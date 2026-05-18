@@ -77,7 +77,7 @@ Iris feeds Saffi. Together they form a complete autonomous outbound pipeline —
   <img src="docs/architecture.svg" alt="Serfis System Architecture" width="860" />
 </div>
 
-The two products share a common identity layer (Clerk) so a user's account works seamlessly across both. Iris verifies prospects and pushes them to Saffi via a shared authentication token — no API keys, no manual export steps.
+The two products share a common identity layer so a user's account works seamlessly across both. Iris verifies prospects and pushes them to Saffi via a shared authentication token — no API keys, no manual export steps.
 
 Each product runs its own independent API and database, keeping concerns separated and allowing each agent to scale independently.
 
@@ -92,7 +92,7 @@ This is a **private codebase**. The repositories are not public. What I can shar
 - **AI-powered core** — email generation, lead scoring, reply classification, and research all run on large language models
 - **Real payments** — Stripe integration with multiple plans, trial management, and per-instance billing
 - **OAuth integrations** — Gmail and Outlook connected via OAuth for sending emails as the user
-- **Cloud-native deployment** — Vercel (frontend), Railway (API), Neon (Postgres), Cloudflare (DNS + CDN)
+- **Cloud-native deployment** — edge-hosted frontends, serverless APIs, managed Postgres, global CDN
 - **14 database migrations** — schema has evolved with the product through production use
 
 Both products are live, deployed, and accepting real users.
