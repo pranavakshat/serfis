@@ -99,6 +99,20 @@ Both products are live, deployed, and accepting real users.
 
 ---
 
+## Selected Product Case Studies
+
+For recruiters and collaborators, I keep public no-code case studies that explain the product, problem, architecture, and my role without exposing private source code.
+
+- [Serfis AI Workforce](case-studies/serfis-ai-workforce/README.md) — autonomous AI agents for B2B sales and prospecting.
+- [Laizy](case-studies/laizy/README.md) — cloud-run job application automation with human approval gates.
+- [AI Stock Analyst](case-studies/ai-stock-analyst/README.md) — multi-model daily market analyst with live scoring.
+- [Speak ART](case-studies/speak-art/README.md) — realtime voice-to-editable-presentation builder.
+- [Shopping AI](case-studies/shopping-ai/README.md) — barcode-first grocery and beauty recommendation PWA.
+
+See the full index: [case-studies](case-studies/README.md).
+
+---
+
 ## About
 
 Built by **Pranav Akshat** — founder, lead engineer, and product designer.
